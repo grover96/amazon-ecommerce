@@ -1,0 +1,4 @@
+include "applications/accounts"
+include "applications/orders"
+include "applications/shipments"
+include "applications/products"
