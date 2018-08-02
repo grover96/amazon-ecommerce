@@ -23,9 +23,6 @@ public class OrdersService {
 
     private OrdersRepository ordersRepository;
     private RestTemplate restTemplate;
-    private Address address;
-    private OrderDetails orderDetails;
-    private Orders orders;
 
     public OrdersService(OrdersRepository ordersRepository, RestTemplate restTemplate) {
         this.ordersRepository = ordersRepository;
@@ -41,14 +38,13 @@ public class OrdersService {
     }
 
     public OrderDetails getByOrderDetailsId(Long id) {
+        OrderDetails orderDetails = new OrderDetails();
+        Orders orders = ordersRepository.findById(id).get();
 
-
-        orders = ordersRepository.findById(id).get();
         orderDetails.setOrderNumber(orders.getOrderNumber());
         orderDetails.setTotalPrice(orders.getTotalPrice());
 
-
-        address = restTemplate.getForObject("//accounts/accounts/" + orders.getAccount() + "/address/" + orders.getShippingAddress(), Address.class);
+        Address address = restTemplate.getForObject("//accounts/accounts/" + orders.getAccount() + "/address/" + orders.getShippingAddress(), Address.class);
         orderDetails.setShippingAddress(address);
 
         ArrayList<Shipment> shipments = new ArrayList<>();
@@ -62,7 +58,6 @@ public class OrdersService {
         orderDetails.setLineItems(orders.getLineItems());
 
         return orderDetails;
-
 
     }
 
@@ -81,6 +76,19 @@ public class OrdersService {
     public void delete(Long id) {
         ordersRepository.deleteById(id);
     }
+
+//    public List<Orders> getAllOrdersForAccount(long accountId) throws IOException {
+//
+//        ResponseEntity<String> response = restTemplate.getForEntity("//accounts/accounts/" + accountId, String.class);
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        JsonNode root = objectMapper.readTree(response.getBody());
+//        JsonNode companyId = root.path("id");
+//
+//        System.out.println(companyId);
+//        System.out.println(root);
+//
+//        return ordersRepository.findByAccountOrderByOrderDateAsc(companyId.asLong());
+//    }
 
     public List<Orders> getAllOrdersForAccount(long accountId) throws IOException {
         return ordersRepository.findByAccountOrderByOrderDateAsc(accountId);

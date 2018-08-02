@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.099s</div>
+<div class="counter">0.101s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">testCreateAddress</td>
-<td class="success">0.025s</td>
+<td class="success">0.024s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDeleteAccount</td>
-<td class="success">0.015s</td>
+<td class="success">0.018s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -94,12 +94,12 @@
 </tr>
 <tr>
 <td class="success">testGetAllAddresses</td>
-<td class="success">0.019s</td>
+<td class="success">0.020s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpdateAddress</td>
-<td class="success">0.023s</td>
+<td class="success">0.022s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,12 +107,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2018-08-02 08:47:10.237  INFO 81878 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jpa.amazon.ecommerce.accounts.controller.AddressControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2018-08-02 08:47:10.241  INFO 81878 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2018-08-02 08:47:10.241  INFO 81878 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5d6cff39, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4e11b5d8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@719c7483, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1705a977, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d2a1999, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6ed6d691, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7cfc8fa4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4608df5d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3b93f0d4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6329db69, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7b30f907, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7b42230b]
-2018-08-02 08:47:10.329  INFO 81878 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42976dbd: startup date [Thu Aug 02 08:47:10 CDT 2018]; root of context hierarchy
-2018-08-02 08:47:10.347  INFO 81878 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2018-08-02 08:47:10.366  INFO 81878 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1d4507b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+<pre>2018-08-02 10:34:37.403  INFO 1824 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jpa.amazon.ecommerce.accounts.controller.AddressControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-08-02 10:34:37.406  INFO 1824 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-08-02 10:34:37.407  INFO 1824 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@15238940, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@73d00c6f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@15c9a665, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7aed210b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@730dde9f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4d17e5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@58ef7307, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4b99f468, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@567d22a2, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e67e5b7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1db3ce37, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@190d435d]
+2018-08-02 10:34:37.499  INFO 1824 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@34132c3a: startup date [Thu Aug 02 10:34:37 CDT 2018]; root of context hierarchy
+2018-08-02 10:34:37.517  INFO 1824 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-02 10:34:37.535  INFO 1824 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c5b712bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -122,33 +122,33 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.0.3.RELEASE)
 
-2018-08-02 08:47:10.412  INFO 81878 --- [    Test worker] c.j.a.e.a.c.AddressControllerTest        : No active profile set, falling back to default profiles: default
-2018-08-02 08:47:10.414  INFO 81878 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3408f8bb: startup date [Thu Aug 02 08:47:10 CDT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@42976dbd
-2018-08-02 08:47:10.500  INFO 81878 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2018-08-02 08:47:10.614  INFO 81878 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-02 08:47:10.679  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3408f8bb: startup date [Thu Aug 02 08:47:10 CDT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@42976dbd
-2018-08-02 08:47:10.691  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-02 08:47:10.691  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-02 08:47:10.709  INFO 81878 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-02 08:47:10.709  INFO 81878 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-02 08:47:10.831  INFO 81878 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2018-08-02 10:34:37.582  INFO 1824 --- [    Test worker] c.j.a.e.a.c.AddressControllerTest        : No active profile set, falling back to default profiles: default
+2018-08-02 10:34:37.583  INFO 1824 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@65480fda: startup date [Thu Aug 02 10:34:37 CDT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@34132c3a
+2018-08-02 10:34:37.674  INFO 1824 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-02 10:34:37.785  INFO 1824 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 10:34:37.847  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@65480fda: startup date [Thu Aug 02 10:34:37 CDT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@34132c3a
+2018-08-02 10:34:37.859  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-02 10:34:37.860  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-02 10:34:37.876  INFO 1824 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 10:34:37.877  INFO 1824 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 10:34:37.995  INFO 1824 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: a60e67de-e42a-4a5d-ab4d-6c1d3cc72f46
+Using generated security password: 41350764-9271-46b7-997e-68618a343335
 
-2018-08-02 08:47:10.909  INFO 81878 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9327c50, org.springframework.security.web.context.SecurityContextPersistenceFilter@ff83913, org.springframework.security.web.header.HeaderWriterFilter@ad82ea7, org.springframework.security.web.authentication.logout.LogoutFilter@3b12758, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72601b4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3986aeb1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d41e40a, org.springframework.security.web.session.SessionManagementFilter@97535a, org.springframework.security.web.access.ExceptionTranslationFilter@4a56f666, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3979d6b5]
-2018-08-02 08:47:10.918  INFO 81878 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:10.918  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:10.927  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 9 ms
-2018-08-02 08:47:10.944  INFO 81878 --- [    Test worker] c.j.a.e.a.c.AddressControllerTest        : Started AddressControllerTest in 0.667 seconds (JVM running for 10.608)
-2018-08-02 08:47:10.954  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
-2018-08-02 08:47:10.955  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:10.955  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
-2018-08-02 08:47:10.955  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
-2018-08-02 08:47:10.955  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:10.962  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@200d43e5
-2018-08-02 08:47:10.964  INFO 81878 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:10.964  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:10.964  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:34:38.047  INFO 1824 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@388ec488, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e9bfefb, org.springframework.security.web.header.HeaderWriterFilter@3e1383b0, org.springframework.security.web.authentication.logout.LogoutFilter@10fd6f52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d06cd7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@faac56c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71ce19bc, org.springframework.security.web.session.SessionManagementFilter@3255b3b8, org.springframework.security.web.access.ExceptionTranslationFilter@491950ff, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@583224b9]
+2018-08-02 10:34:38.056  INFO 1824 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-08-02 10:34:38.056  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:34:38.064  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 8 ms
+2018-08-02 10:34:38.080  INFO 1824 --- [    Test worker] c.j.a.e.a.c.AddressControllerTest        : Started AddressControllerTest in 0.631 seconds (JVM running for 12.32)
+2018-08-02 10:34:38.089  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
+2018-08-02 10:34:38.089  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.089  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
+2018-08-02 10:34:38.090  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.090  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
+2018-08-02 10:34:38.097  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@67dac816
+2018-08-02 10:34:38.099  INFO 1824 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:34:38.099  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:34:38.099  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
 
 MockHttpServletRequest:
       HTTP Method = POST
@@ -186,15 +186,15 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2018-08-02 08:47:10.976  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
-2018-08-02 08:47:10.976  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:10.976  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
-2018-08-02 08:47:10.977  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
-2018-08-02 08:47:10.977  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:10.984  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@38b37f1f
-2018-08-02 08:47:10.986  INFO 81878 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:10.986  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:10.987  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:34:38.111  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
+2018-08-02 10:34:38.111  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.111  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
+2018-08-02 10:34:38.112  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.112  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
+2018-08-02 10:34:38.120  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@4c4f90f1
+2018-08-02 10:34:38.121  INFO 1824 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:34:38.121  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:34:38.122  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -232,15 +232,15 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2018-08-02 08:47:10.995  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
-2018-08-02 08:47:10.995  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:10.996  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
-2018-08-02 08:47:10.996  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
-2018-08-02 08:47:10.996  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:11.005  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@d61c1d8
-2018-08-02 08:47:11.007  INFO 81878 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:11.007  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:11.007  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:34:38.132  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
+2018-08-02 10:34:38.132  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.132  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
+2018-08-02 10:34:38.132  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.132  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
+2018-08-02 10:34:38.141  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@4ba87a4c
+2018-08-02 10:34:38.143  INFO 1824 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:34:38.143  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:34:38.143  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
 
 MockHttpServletRequest:
       HTTP Method = PUT
@@ -278,24 +278,24 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2018-08-02 08:47:11.018  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
-2018-08-02 08:47:11.018  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:11.019  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
-2018-08-02 08:47:11.019  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
-2018-08-02 08:47:11.019  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:11.027  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@280153b6
-2018-08-02 08:47:11.029  INFO 81878 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:11.029  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:11.029  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
-2018-08-02 08:47:11.035  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
-2018-08-02 08:47:11.035  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:11.036  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
-2018-08-02 08:47:11.036  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
-2018-08-02 08:47:11.036  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
-2018-08-02 08:47:11.043  INFO 81878 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@2ac60617
-2018-08-02 08:47:11.044  INFO 81878 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:11.045  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:11.045  INFO 81878 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:34:38.154  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
+2018-08-02 10:34:38.155  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.155  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
+2018-08-02 10:34:38.155  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.156  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
+2018-08-02 10:34:38.163  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@72c7c2e3
+2018-08-02 10:34:38.165  INFO 1824 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:34:38.165  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:34:38.166  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2018-08-02 10:34:38.173  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.update(java.lang.Long,java.lang.Long,com.jpa.amazon.ecommerce.accounts.domain.Address)
+2018-08-02 10:34:38.174  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.accounts.controller.AddressController.delete(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.174  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.create(com.jpa.amazon.ecommerce.accounts.domain.Address,java.lang.Long)
+2018-08-02 10:34:38.174  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address/{address_id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.accounts.domain.Address com.jpa.amazon.ecommerce.accounts.controller.AddressController.getById(java.lang.Long,java.lang.Long)
+2018-08-02 10:34:38.174  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/accounts/{id}/address],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.accounts.domain.Address&gt; com.jpa.amazon.ecommerce.accounts.controller.AddressController.getAllByAccountId(java.lang.Long)
+2018-08-02 10:34:38.180  INFO 1824 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@89146ed
+2018-08-02 10:34:38.182  INFO 1824 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:34:38.182  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:34:38.182  INFO 1824 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -344,7 +344,7 @@ MockHttpServletResponse:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.8.1</a> at Aug 2, 2018 8:47:15 AM</p>
+<a href="http://www.gradle.org">Gradle 4.8.1</a> at Aug 2, 2018 10:34:42 AM</p>
 </div>
 </div>
 </body>

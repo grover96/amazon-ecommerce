@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.285s</div>
+<div class="counter">0.471s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,32 +79,32 @@
 </thead>
 <tr>
 <td class="success">testCreateShipment</td>
-<td class="success">0.023s</td>
+<td class="success">0.037s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDeleteShipment</td>
-<td class="success">0.018s</td>
+<td class="success">0.026s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetAllShipments</td>
-<td class="success">0.020s</td>
+<td class="success">0.041s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetAllShipmentsOfAccount</td>
-<td class="success">0.108s</td>
+<td class="success">0.166s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetShipmentById</td>
-<td class="success">0.017s</td>
+<td class="success">0.021s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpdateShipment</td>
-<td class="success">0.099s</td>
+<td class="success">0.180s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -112,12 +112,12 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2018-08-02 08:47:56.281  INFO 82031 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jpa.amazon.ecommerce.shipments.controller.ShipmentControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2018-08-02 08:47:56.296  INFO 82031 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2018-08-02 08:47:56.296  INFO 82031 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@93d114a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4604b94e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7d3b30b3, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3b40d7c2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5a9626a1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@393b2a74, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1d213b48, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@20e211e9, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4baa887a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b2263f1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f4df6a6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@f90c5ff]
-2018-08-02 08:47:56.703  INFO 82031 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a3f0def: startup date [Thu Aug 02 08:47:56 CDT 2018]; root of context hierarchy
-2018-08-02 08:47:56.722  INFO 82031 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2018-08-02 08:47:56.742  INFO 82031 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$344122c6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+<pre>2018-08-02 10:35:30.526  INFO 2013 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jpa.amazon.ecommerce.shipments.controller.ShipmentControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-08-02 10:35:30.541  INFO 2013 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-08-02 10:35:30.541  INFO 2013 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@610668ab, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@9431444, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@15b15856, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11d31cb9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43c27d18, org.springframework.test.context.transaction.TransactionalTestExecutionListener@52b2b010, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4dde21f8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@44e1ca2e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@141b5517, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53ee45b4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6f837fd0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@257968b4]
+2018-08-02 10:35:30.972  INFO 2013 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@64787cc5: startup date [Thu Aug 02 10:35:30 CDT 2018]; root of context hierarchy
+2018-08-02 10:35:30.995  INFO 2013 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-02 10:35:31.020  INFO 2013 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5215595f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -127,35 +127,35 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.0.3.RELEASE)
 
-2018-08-02 08:47:56.797  INFO 82031 --- [    Test worker] c.j.a.e.s.c.ShipmentControllerTest       : No active profile set, falling back to default profiles: default
-2018-08-02 08:47:56.799  INFO 82031 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2a3051f1: startup date [Thu Aug 02 08:47:56 CDT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6a3f0def
-2018-08-02 08:47:56.910  INFO 82031 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2018-08-02 08:47:57.072  INFO 82031 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-02 08:47:57.166  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@2a3051f1: startup date [Thu Aug 02 08:47:56 CDT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6a3f0def
-2018-08-02 08:47:57.181  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-08-02 08:47:57.181  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-08-02 08:47:57.197  INFO 82031 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-02 08:47:57.197  INFO 82031 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-08-02 08:47:57.230  WARN 82031 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2018-08-02 08:47:57.338  INFO 82031 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2018-08-02 10:35:31.095  INFO 2013 --- [    Test worker] c.j.a.e.s.c.ShipmentControllerTest       : No active profile set, falling back to default profiles: default
+2018-08-02 10:35:31.097  INFO 2013 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@160233b0: startup date [Thu Aug 02 10:35:31 CDT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64787cc5
+2018-08-02 10:35:31.243  INFO 2013 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-08-02 10:35:31.418  INFO 2013 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 10:35:31.486  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@160233b0: startup date [Thu Aug 02 10:35:31 CDT 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64787cc5
+2018-08-02 10:35:31.499  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-02 10:35:31.499  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-02 10:35:31.518  INFO 2013 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 10:35:31.518  INFO 2013 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-02 10:35:31.551  WARN 2013 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-08-02 10:35:31.663  INFO 2013 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: a349f732-4d0d-4acf-a9ca-28486778ce52
+Using generated security password: e4fada4d-4f8c-4fa2-9f78-390b0c1bc62d
 
-2018-08-02 08:47:57.394  INFO 82031 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6318474c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3114927a, org.springframework.security.web.header.HeaderWriterFilter@752a39d6, org.springframework.security.web.authentication.logout.LogoutFilter@5238c915, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55f7dffc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7137a81d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fe112a, org.springframework.security.web.session.SessionManagementFilter@3a733bfd, org.springframework.security.web.access.ExceptionTranslationFilter@64600ce8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@749606e2]
-2018-08-02 08:47:57.411  INFO 82031 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:57.411  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:57.423  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 12 ms
-2018-08-02 08:47:57.445  INFO 82031 --- [    Test worker] c.j.a.e.s.c.ShipmentControllerTest       : Started ShipmentControllerTest in 0.799 seconds (JVM running for 9.716)
-2018-08-02 08:47:57.463  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.464  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
-2018-08-02 08:47:57.464  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.464  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
-2018-08-02 08:47:57.465  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
-2018-08-02 08:47:57.465  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
-2018-08-02 08:47:57.476  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@7468e31f
-2018-08-02 08:47:57.478  INFO 82031 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:57.478  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:57.478  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:35:31.713  INFO 2013 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1060e84, org.springframework.security.web.context.SecurityContextPersistenceFilter@20101d41, org.springframework.security.web.header.HeaderWriterFilter@5b30ac45, org.springframework.security.web.authentication.logout.LogoutFilter@6ed8b48b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fc232f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61cef3ca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cd6ab71, org.springframework.security.web.session.SessionManagementFilter@6f0c12ba, org.springframework.security.web.access.ExceptionTranslationFilter@61ffc646, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5de8d14b]
+2018-08-02 10:35:31.737  INFO 2013 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2018-08-02 10:35:31.738  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:35:31.754  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 16 ms
+2018-08-02 10:35:31.776  INFO 2013 --- [    Test worker] c.j.a.e.s.c.ShipmentControllerTest       : Started ShipmentControllerTest in 0.885 seconds (JVM running for 10.136)
+2018-08-02 10:35:31.794  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:31.794  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
+2018-08-02 10:35:31.795  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:31.795  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
+2018-08-02 10:35:31.795  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
+2018-08-02 10:35:31.795  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
+2018-08-02 10:35:31.805  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@e0419c0
+2018-08-02 10:35:31.807  INFO 2013 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:35:31.808  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:35:31.808  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -193,16 +193,16 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2018-08-02 08:47:57.562  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.562  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
-2018-08-02 08:47:57.562  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.563  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
-2018-08-02 08:47:57.563  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
-2018-08-02 08:47:57.563  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
-2018-08-02 08:47:57.571  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@2656c74c
-2018-08-02 08:47:57.573  INFO 82031 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:57.573  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:57.573  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:35:31.959  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:31.960  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
+2018-08-02 10:35:31.960  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:31.960  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
+2018-08-02 10:35:31.961  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
+2018-08-02 10:35:31.961  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
+2018-08-02 10:35:31.975  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@5d0c0180
+2018-08-02 10:35:31.978  INFO 2013 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:35:31.978  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:35:31.979  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
 
 MockHttpServletRequest:
       HTTP Method = PUT
@@ -240,16 +240,16 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2018-08-02 08:47:57.663  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.664  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
-2018-08-02 08:47:57.664  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.665  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
-2018-08-02 08:47:57.665  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
-2018-08-02 08:47:57.666  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
-2018-08-02 08:47:57.673  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@759ea679
-2018-08-02 08:47:57.675  INFO 82031 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:57.675  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:57.675  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:35:32.136  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:32.137  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
+2018-08-02 10:35:32.137  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:32.139  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
+2018-08-02 10:35:32.139  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
+2018-08-02 10:35:32.139  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
+2018-08-02 10:35:32.153  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@2c2ed919
+2018-08-02 10:35:32.156  INFO 2013 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:35:32.157  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:35:32.157  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
 
 MockHttpServletRequest:
       HTTP Method = POST
@@ -287,16 +287,16 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2018-08-02 08:47:57.684  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.685  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
-2018-08-02 08:47:57.685  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.685  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
-2018-08-02 08:47:57.685  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
-2018-08-02 08:47:57.685  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
-2018-08-02 08:47:57.693  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@179c259d
-2018-08-02 08:47:57.695  INFO 82031 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:57.695  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:57.696  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:35:32.173  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:32.175  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
+2018-08-02 10:35:32.175  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:32.175  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
+2018-08-02 10:35:32.176  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
+2018-08-02 10:35:32.177  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
+2018-08-02 10:35:32.189  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@7f7aa33d
+2018-08-02 10:35:32.191  INFO 2013 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:35:32.192  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:35:32.192  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
 
 MockHttpServletRequest:
       HTTP Method = GET
@@ -334,26 +334,26 @@ MockHttpServletResponse:
     Forwarded URL = null
    Redirected URL = null
           Cookies = []
-2018-08-02 08:47:57.706  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.706  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
-2018-08-02 08:47:57.707  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.707  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
-2018-08-02 08:47:57.707  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
-2018-08-02 08:47:57.708  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
-2018-08-02 08:47:57.715  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@715bc548
-2018-08-02 08:47:57.717  INFO 82031 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:57.717  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:57.717  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
-2018-08-02 08:47:57.723  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.724  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
-2018-08-02 08:47:57.724  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
-2018-08-02 08:47:57.724  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
-2018-08-02 08:47:57.724  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
-2018-08-02 08:47:57.725  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
-2018-08-02 08:47:57.732  INFO 82031 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3feeeda7
-2018-08-02 08:47:57.734  INFO 82031 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
-2018-08-02 08:47:57.734  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
-2018-08-02 08:47:57.734  INFO 82031 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2018-08-02 10:35:32.218  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:32.218  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
+2018-08-02 10:35:32.219  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:32.219  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
+2018-08-02 10:35:32.219  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
+2018-08-02 10:35:32.220  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
+2018-08-02 10:35:32.232  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@71fa7ddf
+2018-08-02 10:35:32.234  INFO 2013 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:35:32.234  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:35:32.235  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2018-08-02 10:35:32.242  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[PUT]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.update(java.lang.Long,com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:32.242  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[DELETE]}&quot; onto public void com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.delete(java.lang.Long)
+2018-08-02 10:35:32.243  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[POST]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.create(com.jpa.amazon.ecommerce.shipments.domain.Shipment)
+2018-08-02 10:35:32.243  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/],methods=[GET]}&quot; onto public java.lang.Iterable&lt;com.jpa.amazon.ecommerce.shipments.domain.Shipment&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAll()
+2018-08-02 10:35:32.243  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments],methods=[GET]}&quot; onto public java.util.List&lt;com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails&gt; com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getAllOrdersForAccount(long) throws java.io.IOException
+2018-08-02 10:35:32.244  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/shipments/{id}],methods=[GET]}&quot; onto public com.jpa.amazon.ecommerce.shipments.domain.Shipment com.jpa.amazon.ecommerce.shipments.controller.ShipmentController.getById(java.lang.Long)
+2018-08-02 10:35:32.253  INFO 2013 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@291b3829
+2018-08-02 10:35:32.255  INFO 2013 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2018-08-02 10:35:32.255  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2018-08-02 10:35:32.255  INFO 2013 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
 </pre>
 </span>
 </div>
@@ -365,7 +365,7 @@ MockHttpServletResponse:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.8.1</a> at Aug 2, 2018 8:48:01 AM</p>
+<a href="http://www.gradle.org">Gradle 4.8.1</a> at Aug 2, 2018 10:35:37 AM</p>
 </div>
 </div>
 </body>

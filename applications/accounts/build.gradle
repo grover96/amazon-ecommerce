@@ -35,8 +35,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile group: 'io.pivotal.spring.cloud', name: 'spring-cloud-services-starter-service-registry', version: '2.0.1.RELEASE'
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
-	runtime('org.springframework.boot:spring-boot-devtools')
-	runtime('com.h2database:h2')
+	compile("com.h2database:h2")
 	runtime('mysql:mysql-connector-java')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')

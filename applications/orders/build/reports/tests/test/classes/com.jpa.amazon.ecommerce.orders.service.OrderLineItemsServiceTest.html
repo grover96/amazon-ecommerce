@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.008s</div>
+<div class="counter">0.010s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">testCreateOrderLineItem</td>
-<td class="success">0.002s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testDeleteOrderLineItem</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -107,11 +107,11 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2018-08-02 08:47:27.396  INFO 81928 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jpa.amazon.ecommerce.orders.service.OrderLineItemsServiceTest], using DelegatingSmartContextLoader
-2018-08-02 08:47:27.397  INFO 81928 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jpa.amazon.ecommerce.orders.service.OrderLineItemsServiceTest]: no resource found for suffixes {-context.xml}.
-2018-08-02 08:47:27.397  INFO 81928 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.jpa.amazon.ecommerce.orders.service.OrderLineItemsServiceTest]: OrderLineItemsServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2018-08-02 08:47:27.398  INFO 81928 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2018-08-02 08:47:27.398  INFO 81928 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@71eab67c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78101cb0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@442fd22f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@430055f9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@67fd42b3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1f702760, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2574300b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@641a16c1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@697f282b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@77aa5943, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@735acbd5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@47427761]
+<pre>2018-08-02 10:34:58.022  INFO 1887 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jpa.amazon.ecommerce.orders.service.OrderLineItemsServiceTest], using DelegatingSmartContextLoader
+2018-08-02 10:34:58.023  INFO 1887 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.jpa.amazon.ecommerce.orders.service.OrderLineItemsServiceTest]: no resource found for suffixes {-context.xml}.
+2018-08-02 10:34:58.023  INFO 1887 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.jpa.amazon.ecommerce.orders.service.OrderLineItemsServiceTest]: OrderLineItemsServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-08-02 10:34:58.024  INFO 1887 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-08-02 10:34:58.024  INFO 1887 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@86d8375, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2825308e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@24134142, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5e48e4e6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3a5aa271, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3b7a54f4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@55d1b88, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1caba011, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@738dd0df, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1ab9e7ae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@77d53e2a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@36bfa3e9]
 </pre>
 </span>
 </div>
@@ -123,7 +123,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.8.1</a> at Aug 2, 2018 8:47:31 AM</p>
+<a href="http://www.gradle.org">Gradle 4.8.1</a> at Aug 2, 2018 10:35:02 AM</p>
 </div>
 </div>
 </body>
