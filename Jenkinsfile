@@ -13,7 +13,6 @@ pipeline {
             steps {
                 echo 'building accounts application...'
                 sh './gradlew applications/accounts:build -x test'
-                sh './gradlew applications/accounts:bootRun'
             }
 	    }
 	    stage('Test'){
