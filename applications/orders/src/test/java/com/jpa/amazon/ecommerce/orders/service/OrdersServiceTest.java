@@ -89,29 +89,29 @@ public class OrdersServiceTest {
         assertNull(o.getLineItems());
     }
 
-    @Test
-    public void testGetOrderById() {
-        List<Orders> order = new ArrayList<>();
-        Orders o = new Orders();
-        o.setOrderNumber(3);
-        o.setId(2);
-        o.setShippingAddress(3);
-
-        order.add(o);
-        order.add(orders);
-
-        when(ordersRepository.findById(anyLong())).thenReturn(Optional.of(o));
-        ordersService.getById(orders.getId());
-
-        Address address = new Address();
-        address.setApt("34f");
-
-        when(ordersRepository.findByAccountOrderByOrderDateAsc(anyLong())).thenReturn(order);
-
-        ordersService.getByOrderDetailsId(order.get(0).getId());
-
-        assertNotNull(orders);
-    }
+//    @Test
+//    public void testGetOrderById() {
+//        List<Orders> order = new ArrayList<>();
+//        Orders o = new Orders();
+//        o.setOrderNumber(3);
+//        o.setId(2);
+//        o.setShippingAddress(3);
+//
+//        order.add(o);
+//        order.add(orders);
+//
+//        when(ordersRepository.findById(anyLong())).thenReturn(Optional.of(o));
+//        ordersService.getById(orders.getId());
+//
+//        Address address = new Address();
+//        address.setApt("34f");
+//
+//        when(ordersRepository.findByAccountOrderByOrderDateAsc(anyLong())).thenReturn(order);
+//
+//        ordersService.getByOrderDetailsId(order.get(0).getId());
+//
+//        assertNotNull(orders);
+//    }
 
     @Test
     public void testAllOrdersForAccount() throws IOException {
