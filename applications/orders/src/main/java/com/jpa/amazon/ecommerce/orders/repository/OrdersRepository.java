@@ -10,7 +10,7 @@ import java.util.List;
 
 @Repository
 public interface OrdersRepository extends CrudRepository<Orders, Long> {
-    //List<Orders> findByAccountIdOrderByOrderDateAsc(Long id);
+    List<Orders> findByAccountOrderByOrderDateAsc(Long id);
 
     //@Query(value = "select new com.jpa.amazon.ecommerce.orders.domain.OrderDetails(orders.orderNumber AS orderNumber, orders.totalPrice AS ) FROM Orders orders WHERE orders.id = :id")
     //OrderDetails findByOrderDetails(Long id);

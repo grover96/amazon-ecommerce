@@ -1,9 +1,13 @@
 package com.jpa.amazon.ecommerce.shipments.controller;
 
 import com.jpa.amazon.ecommerce.shipments.domain.Shipment;
+import com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails;
 import com.jpa.amazon.ecommerce.shipments.service.ShipmentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
+import java.util.List;
 
 @RestController
 @RequestMapping("/shipments")
@@ -15,9 +19,14 @@ public class ShipmentController {
         this.shipmentService = shipmentService;
     }
 
-    @GetMapping
+    @GetMapping("/")
     public Iterable<Shipment> getAll(){
         return shipmentService.getAll();
+    }
+
+    @GetMapping
+    public List<ShipmentDetails> getAllOrdersForAccount(@RequestParam("accountId") long accountId) throws IOException {
+        return shipmentService.getAllOrdersForAccount(accountId);
     }
 
     @GetMapping(value = "/{id}")

@@ -21,7 +21,7 @@ public class Orders {
     private long shippingAddress;
     @OneToMany(mappedBy = "order")
     @JsonManagedReference
-    private List<OrderLineItems> orderLineItems;
+    private List<OrderLineItems> lineItems;
     private float totalPrice;
 
 }

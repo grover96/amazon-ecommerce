@@ -44,7 +44,17 @@ public class ShipmentControllerTest {
 
     @Test
     public void testGetAllShipments() throws  Exception {
-        mockMvc.perform(get("/shipments"))
+        mockMvc.perform(get("/shipments/"))
+                .andExpect(status().isOk())
+                .andDo(print());
+    }
+
+    @Test
+    public void testGetAllShipmentsOfAccount() throws  Exception {
+        mockMvc.perform(get("/shipments")
+                .param("accountId", String.valueOf(1))
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andDo(print());
     }

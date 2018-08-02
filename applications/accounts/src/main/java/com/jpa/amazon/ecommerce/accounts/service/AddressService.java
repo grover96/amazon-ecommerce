@@ -46,7 +46,9 @@ public class AddressService {
 
     public void delete(Long id, Long accountId){
         Address address = addressRepository.getByIdAndAccountId(id, accountId);
-        addressRepository.deleteById(address.getId());
+        if(address != null) {
+            addressRepository.deleteById(address.getId());
+        }
     }
 
 }

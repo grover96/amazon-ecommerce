@@ -42,7 +42,9 @@ public class OrderLineItemsService {
 
     public void delete(Long id, Long orderId){
         OrderLineItems orderLineItems = orderLineItemsRepository.getByIdAndOrderId(id, orderId);
-        orderLineItemsRepository.deleteById(orderLineItems.getId());
+        if(orderLineItems != null) {
+            orderLineItemsRepository.deleteById(orderLineItems.getId());
+        }
     }
 
 }

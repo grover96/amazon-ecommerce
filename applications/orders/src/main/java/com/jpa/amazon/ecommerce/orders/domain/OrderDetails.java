@@ -12,9 +12,10 @@ import java.util.List;
 public class OrderDetails {
 
     private long orderNumber;
-    private long shippingAddressId;
+    private Address shippingAddress;
     private float totalPrice;
-    private long shipmentId;
+    @JsonIgnoreProperties({ "id", "shipment", "account", "price", "id" })
+    private List<Shipment> shipment;
     @JsonIgnoreProperties({ "totalPrice", "shipment", "account", "price", "id" })
-    private List<OrderLineItems> orderLineItems;
+    private List<OrderLineItems> lineItems;
 }

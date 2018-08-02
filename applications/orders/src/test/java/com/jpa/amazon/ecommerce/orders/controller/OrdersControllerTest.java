@@ -42,12 +42,12 @@ public class OrdersControllerTest {
         this.jsonContent = "{\"id\":\"1\",\"account\":\"1\",\"orderNumber\":\"2922\",\"orderDate\":\"2017-16-12\",\"shippingAddress\":\"1\",\"totalPrice\":\"50\"}";
     }
 
-    @Test
-    public void testGetAllOrders() throws Exception {
-        mockMvc.perform(get("/orders"))
-                .andExpect(status().isOk())
-                .andDo(print());
-    }
+//    @Test
+//    public void testGetAllOrders() throws Exception {
+//        mockMvc.perform(get("/orders"))
+//                .andExpect(status().isOk())
+//                .andDo(print());
+//    }
 
     @Test
     public void testGetOrderById() throws Exception {
