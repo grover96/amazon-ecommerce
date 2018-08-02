@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        USER_NAME = 'rgrover@solstice.com
+        USER_NAME = 'rgrover@solstice.com'
         PASSWORD = 'Jaguar123!'
         ORG = 'solstice-org'
         SPACE = 'rgrover-cnt'
