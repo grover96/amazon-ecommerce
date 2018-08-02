@@ -3,10 +3,7 @@ package com.jpa.amazon.ecommerce.accounts.domain;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -14,7 +11,7 @@ import java.util.List;
 public class Account {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String firstName;
     private String lastName;
