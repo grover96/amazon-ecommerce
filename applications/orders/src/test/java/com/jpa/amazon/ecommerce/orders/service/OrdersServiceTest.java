@@ -1,7 +1,5 @@
 package com.jpa.amazon.ecommerce.orders.service;
 
-import com.jpa.amazon.ecommerce.orders.domain.Address;
-import com.jpa.amazon.ecommerce.orders.domain.OrderDetails;
 import com.jpa.amazon.ecommerce.orders.domain.Orders;
 import com.jpa.amazon.ecommerce.orders.repository.OrdersRepository;
 import org.junit.Before;
@@ -14,11 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-import java.sql.Array;
 import java.sql.Date;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Optional;
 
 import static org.junit.Assert.*;
@@ -126,8 +120,9 @@ public class OrdersServiceTest {
 
         RestTemplate restTemplate = new RestTemplate();
         OrdersRepository ordersRepository = null;
+        HystrixService hystrixService = null;
 
-        OrdersService service = new OrdersService(ordersRepository, restTemplate);
+        OrdersService service = new OrdersService(ordersRepository, restTemplate, hystrixService);
 
         assertNotNull(service);
 

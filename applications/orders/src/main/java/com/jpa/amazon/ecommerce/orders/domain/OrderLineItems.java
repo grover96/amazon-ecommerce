@@ -1,5 +1,6 @@
 package com.jpa.amazon.ecommerce.orders.domain;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -9,10 +10,13 @@ import javax.persistence.*;
 public class OrderLineItems {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(name = "product_id")
     private long product;
+    @Transient
+    @JsonInclude
+    private String productName;
     private int quantity;
     private float price;
     private float totalPrice;

@@ -1,16 +1,7 @@
 package com.jpa.amazon.ecommerce.orders.service;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.jpa.amazon.ecommerce.orders.domain.Address;
-import com.jpa.amazon.ecommerce.orders.domain.OrderDetails;
-import com.jpa.amazon.ecommerce.orders.domain.Orders;
-import com.jpa.amazon.ecommerce.orders.domain.Shipment;
+import com.jpa.amazon.ecommerce.orders.domain.*;
 import com.jpa.amazon.ecommerce.orders.repository.OrdersRepository;
-import org.apache.commons.collections.iterators.IteratorChain;
-import org.aspectj.weaver.ast.Or;
-import org.hibernate.criterion.Order;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -23,10 +14,12 @@ public class OrdersService {
 
     private OrdersRepository ordersRepository;
     private RestTemplate restTemplate;
+    private HystrixService hystrixService;
 
-    public OrdersService(OrdersRepository ordersRepository, RestTemplate restTemplate) {
+    public OrdersService(OrdersRepository ordersRepository, RestTemplate restTemplate, HystrixService hystrixService) {
         this.ordersRepository = ordersRepository;
         this.restTemplate = restTemplate;
+        this.hystrixService = hystrixService;
     }
 
     public Iterable<Orders> getAll() {
@@ -44,21 +37,24 @@ public class OrdersService {
         orderDetails.setOrderNumber(orders.getOrderNumber());
         orderDetails.setTotalPrice(orders.getTotalPrice());
 
-        Address address = restTemplate.getForObject("//accounts/accounts/" + orders.getAccount() + "/address/" + orders.getShippingAddress(), Address.class);
+        Address address = hystrixService.getAddress(orders);
         orderDetails.setShippingAddress(address);
 
-        ArrayList<Shipment> shipments = new ArrayList<>();
+        List<Shipment> shipments = new ArrayList<>();
 
         orders.getLineItems().forEach(orderLineItem -> {
-            Shipment shipment = restTemplate.getForObject("//shipments/shipments/" + orderLineItem.getShipment(), Shipment.class);
+            Shipment shipment = hystrixService.getShipment(orderLineItem);
+            //shipment.setOrderLineItems(orders.getLineItems());
             shipments.add(shipment);
+
+            Product product = hystrixService.getProduct(orderLineItem);
+            orderLineItem.setProductName(product.getName());
         });
 
         orderDetails.setShipment(shipments);
         orderDetails.setLineItems(orders.getLineItems());
 
         return orderDetails;
-
     }
 
     public Orders create(Orders orders) {
@@ -76,19 +72,6 @@ public class OrdersService {
     public void delete(Long id) {
         ordersRepository.deleteById(id);
     }
-
-//    public List<Orders> getAllOrdersForAccount(long accountId) throws IOException {
-//
-//        ResponseEntity<String> response = restTemplate.getForEntity("//accounts/accounts/" + accountId, String.class);
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        JsonNode root = objectMapper.readTree(response.getBody());
-//        JsonNode companyId = root.path("id");
-//
-//        System.out.println(companyId);
-//        System.out.println(root);
-//
-//        return ordersRepository.findByAccountOrderByOrderDateAsc(companyId.asLong());
-//    }
 
     public List<Orders> getAllOrdersForAccount(long accountId) throws IOException {
         return ordersRepository.findByAccountOrderByOrderDateAsc(accountId);

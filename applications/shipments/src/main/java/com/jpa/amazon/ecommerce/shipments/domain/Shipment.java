@@ -1,5 +1,6 @@
 package com.jpa.amazon.ecommerce.shipments.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
@@ -13,7 +14,7 @@ import java.util.List;
 public class Shipment {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(name = "account_id")
     private long account;
@@ -23,7 +24,9 @@ public class Shipment {
     @Transient
     @JsonInclude
     private long lineItems;
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private Date shippedDate;
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private Date deliveryDate;
     private long orderId;
     private long productId;
