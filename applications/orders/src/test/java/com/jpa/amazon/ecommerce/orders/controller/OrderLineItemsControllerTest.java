@@ -48,7 +48,7 @@ public class OrderLineItemsControllerTest {
 
     @Test
     public void testGetAllOrderLineItems() throws Exception {
-        mockMvc.perform(get("/orders/{id}/lines", orderId))
+        mockMvc.perform(get("/orders/{id}/lines/lines", orderId))
                 .andExpect(status().isOk())
                 .andDo(print());
     }

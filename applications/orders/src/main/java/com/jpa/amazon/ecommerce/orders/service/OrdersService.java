@@ -7,6 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -44,7 +45,11 @@ public class OrdersService {
 
         orders.getLineItems().forEach(orderLineItem -> {
             Shipment shipment = hystrixService.getShipment(orderLineItem);
-            shipment.setOrderLineItems(orders.getLineItems());
+
+            OrderLineItems[] orderLineItems = hystrixService.getOrderLineItems(shipment);
+            List<OrderLineItems> lineItems = Arrays.asList(orderLineItems);
+
+            shipment.setOrderLineItems(lineItems);
             shipments.add(shipment);
 
             Product product = hystrixService.getProduct(orderLineItem);
@@ -52,6 +57,7 @@ public class OrdersService {
         });
 
         orderDetails.setShipment(shipments);
+
         orderDetails.setLineItems(orders.getLineItems());
 
         return orderDetails;

@@ -1,11 +1,11 @@
 package com.jpa.amazon.ecommerce.orders.service;
 import com.jpa.amazon.ecommerce.orders.domain.OrderLineItems;
 import com.jpa.amazon.ecommerce.orders.domain.Orders;
-import com.jpa.amazon.ecommerce.orders.domain.Product;
 import com.jpa.amazon.ecommerce.orders.repository.OrderLineItemsRepository;
 import com.jpa.amazon.ecommerce.orders.repository.OrdersRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 @Service
 public class OrderLineItemsService {
@@ -24,6 +24,10 @@ public class OrderLineItemsService {
 
     public OrderLineItems getById(Long id, Long orderId){
         return orderLineItemsRepository.getByIdAndOrderId(id, orderId);
+    }
+
+    public List<OrderLineItems> getByShipmentId(Long shipmentId) {
+        return orderLineItemsRepository.getByShipment(shipmentId);
     }
 
     public OrderLineItems create(OrderLineItems orderLineItems, Long id) {

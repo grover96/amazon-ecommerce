@@ -10,6 +10,7 @@ import java.util.List;
 @Data
 public class ShipmentDetails {
 
+    private long id;
     private long accountId;
     private long orderNumber;
     @JsonFormat(pattern = "dd-MM-yyyy")

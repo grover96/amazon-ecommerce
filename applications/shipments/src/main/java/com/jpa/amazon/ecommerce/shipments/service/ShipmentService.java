@@ -15,12 +15,10 @@ public class ShipmentService {
 
     private ShipmentRepository shipmentRepository;
     private HystrixService hystrixService;
-    private RestTemplate restTemplate;
 
-    public ShipmentService(ShipmentRepository shipmentRepository, HystrixService hystrixService, RestTemplate restTemplate) {
+    public ShipmentService(ShipmentRepository shipmentRepository, HystrixService hystrixService) {
         this.shipmentRepository = shipmentRepository;
         this.hystrixService = hystrixService;
-        this.restTemplate = restTemplate;
     }
 
     public Iterable<Shipment> getAll() {
@@ -37,23 +35,21 @@ public class ShipmentService {
         List<Shipment> shipments = shipmentRepository.findByAccountOrderByDeliveryDateAsc(accountId);
         shipments.forEach(ship -> {
             ShipmentDetails shipmentDetails = new ShipmentDetails();
+            shipmentDetails.setId(ship.getId());
             shipmentDetails.setAccountId(ship.getAccount());
             shipmentDetails.setDeliveryDate(ship.getDeliveryDate());
             shipmentDetails.setShippedDate(ship.getShippedDate());
-
-            Orders orders = hystrixService.getOrders(ship);
-
-            Product product = hystrixService.getProducts(ship);
 
             OrderLineItems[] orderLineItems = hystrixService.getOrderLineItems(ship);
             List<OrderLineItems> lineItems = Arrays.asList(orderLineItems);
 
             Arrays.asList(orderLineItems).forEach(orderLineItems1 -> {
+                Product product = hystrixService.getProducts(orderLineItems1);
                 orderLineItems1.setProductName(product.getName());
             });
 
             shipmentDetails.setLineItems(lineItems);
-            shipmentDetails.setOrderNumber(orders.getOrderNumber());
+            //shipmentDetails.setOrderNumber();
 
             shipmentDetailsList.add(shipmentDetails);
         });

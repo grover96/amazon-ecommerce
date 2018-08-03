@@ -46,4 +46,15 @@ public class HystrixService {
         Product product = new Product();
         return product;
     }
+
+    @HystrixCommand(fallbackMethod = "fallbackOrderLineItems")
+    public OrderLineItems[] getOrderLineItems(Shipment ship) {
+        OrderLineItems[] orderLineItems = restTemplate.getForObject("//orders/orders/0/lines?shipmentId=" + ship.getId(), OrderLineItems[].class);
+        return orderLineItems;
+    }
+
+    public OrderLineItems[] fallbackOrderLineItems(Shipment ship) {
+        OrderLineItems[] orderLineItems = new OrderLineItems[0];
+        return orderLineItems;
+    }
 }

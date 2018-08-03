@@ -28,7 +28,5 @@ public class Shipment {
     private Date shippedDate;
     @JsonFormat(pattern = "dd-MM-yyyy")
     private Date deliveryDate;
-    private long orderId;
-    private long productId;
 
 }
