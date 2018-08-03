@@ -1,9 +1,11 @@
 package com.jpa.amazon.ecommerce.orders.service;
 import com.jpa.amazon.ecommerce.orders.domain.OrderLineItems;
 import com.jpa.amazon.ecommerce.orders.domain.Orders;
+import com.jpa.amazon.ecommerce.orders.domain.Product;
 import com.jpa.amazon.ecommerce.orders.repository.OrderLineItemsRepository;
 import com.jpa.amazon.ecommerce.orders.repository.OrdersRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 public class OrderLineItemsService {

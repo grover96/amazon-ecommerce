@@ -1,6 +1,5 @@
 package com.jpa.amazon.ecommerce.orders.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.jpa.amazon.ecommerce.orders.repository.OrderLineItemsRepository;
 import com.jpa.amazon.ecommerce.orders.repository.OrdersRepository;
 import com.jpa.amazon.ecommerce.orders.service.OrderLineItemsService;

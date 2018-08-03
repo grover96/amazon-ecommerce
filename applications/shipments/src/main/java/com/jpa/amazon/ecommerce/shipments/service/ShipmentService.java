@@ -1,25 +1,25 @@
 package com.jpa.amazon.ecommerce.shipments.service;
 
-import com.jpa.amazon.ecommerce.shipments.domain.OrderLineItems;
-import com.jpa.amazon.ecommerce.shipments.domain.Orders;
-import com.jpa.amazon.ecommerce.shipments.domain.Shipment;
-import com.jpa.amazon.ecommerce.shipments.domain.ShipmentDetails;
+import com.jpa.amazon.ecommerce.shipments.domain.*;
 import com.jpa.amazon.ecommerce.shipments.repository.ShipmentRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
 public class ShipmentService {
 
     private ShipmentRepository shipmentRepository;
+    private HystrixService hystrixService;
     private RestTemplate restTemplate;
 
-    public ShipmentService(ShipmentRepository shipmentRepository, RestTemplate restTemplate) {
+    public ShipmentService(ShipmentRepository shipmentRepository, HystrixService hystrixService, RestTemplate restTemplate) {
         this.shipmentRepository = shipmentRepository;
+        this.hystrixService = hystrixService;
         this.restTemplate = restTemplate;
     }
 
@@ -41,16 +41,22 @@ public class ShipmentService {
             shipmentDetails.setDeliveryDate(ship.getDeliveryDate());
             shipmentDetails.setShippedDate(ship.getShippedDate());
 
-            Orders orders = restTemplate.getForObject("//orders/orders/" + ship.getOrderId(), Orders.class);
+            Orders orders = hystrixService.getOrders(ship);
 
-            List<OrderLineItems> lineItems = restTemplate.getForObject("//orders/orders/" + ship.getOrderId() + "/lines", List.class);
+            Product product = hystrixService.getProducts(ship);
+
+            OrderLineItems[] orderLineItems = hystrixService.getOrderLineItems(ship);
+            List<OrderLineItems> lineItems = Arrays.asList(orderLineItems);
+
+            Arrays.asList(orderLineItems).forEach(orderLineItems1 -> {
+                orderLineItems1.setProductName(product.getName());
+            });
+
             shipmentDetails.setLineItems(lineItems);
-
             shipmentDetails.setOrderNumber(orders.getOrderNumber());
 
             shipmentDetailsList.add(shipmentDetails);
         });
-
 
         return shipmentDetailsList;
     }

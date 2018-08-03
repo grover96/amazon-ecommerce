@@ -15,7 +15,7 @@ public class OrderLineItems {
     @Column(name = "product_id")
     private long product;
     @Transient
-    @JsonInclude
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String productName;
     private int quantity;
     private float price;

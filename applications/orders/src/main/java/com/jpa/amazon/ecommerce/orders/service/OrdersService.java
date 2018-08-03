@@ -44,7 +44,7 @@ public class OrdersService {
 
         orders.getLineItems().forEach(orderLineItem -> {
             Shipment shipment = hystrixService.getShipment(orderLineItem);
-            //shipment.setOrderLineItems(orders.getLineItems());
+            shipment.setOrderLineItems(orders.getLineItems());
             shipments.add(shipment);
 
             Product product = hystrixService.getProduct(orderLineItem);

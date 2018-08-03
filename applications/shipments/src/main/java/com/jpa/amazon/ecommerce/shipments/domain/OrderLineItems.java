@@ -8,6 +8,7 @@ public class OrderLineItems {
     private long id;
     private long product;
     private int quantity;
+    private String productName;
     private float price;
     private float totalPrice;
     private long shipment;

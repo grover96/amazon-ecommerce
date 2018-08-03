@@ -16,6 +16,6 @@ public class ShipmentDetails {
     private Date shippedDate;
     @JsonFormat(pattern = "dd-MM-yyyy")
     private Date deliveryDate;
-    @JsonIgnoreProperties({"id", "price", "totalPrice", "shipment", "account"})
+    @JsonIgnoreProperties({"id", "price", "totalPrice", "shipment", "account", "product", "order"})
     private List<OrderLineItems> lineItems;
 }
