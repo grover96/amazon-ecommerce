@@ -46,7 +46,7 @@ public class ModelTest {
     public void testShipmentDetails() throws Exception {
         List<OrderLineItems> orderLineItems = new ArrayList<>();
 
-        Shipment shipment = new Shipment(1, orderLineItems, Date.valueOf("2018-09-12"), Date.valueOf("2018-09-12"));
+        Shipment shipment = new Shipment(1, orderLineItems, Date.valueOf("2018-09-12"), Date.valueOf("2018-09-12"), 1);
 
         Assert.assertEquals(1, shipment.getId());
         Assert.assertEquals(orderLineItems, shipment.getOrderLineItems());

@@ -14,7 +14,7 @@ public class OrderDetails {
     private long orderNumber;
     private Address shippingAddress;
     private float totalPrice;
-    @JsonIgnoreProperties({ "id", "shipment", "account", "price", "id" })
+    @JsonIgnoreProperties({ "id", "shipment", "account", "price", "order" })
     private List<Shipment> shipment;
     @JsonIgnoreProperties({ "totalPrice", "shipment", "account", "price", "id", "product" })
     private List<OrderLineItems> lineItems;

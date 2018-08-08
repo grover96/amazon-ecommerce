@@ -25,7 +25,7 @@ pipeline {
 	        steps {
 	            echo 'testing accounts application...'
 		        sh './gradlew applications/accounts:test'
-		        echo 'testing orderss application...'
+		        echo 'testing orders application...'
                 sh './gradlew applications/orders:test'
                 echo 'testing products application...'
                 sh './gradlew applications/products:test'

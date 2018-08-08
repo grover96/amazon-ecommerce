@@ -3,7 +3,6 @@ package com.jpa.amazon.ecommerce.shipments.service;
 import com.jpa.amazon.ecommerce.shipments.domain.*;
 import com.jpa.amazon.ecommerce.shipments.repository.ShipmentRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -48,8 +47,10 @@ public class ShipmentService {
                 orderLineItems1.setProductName(product.getName());
             });
 
+            Orders orders = hystrixService.getOrders(ship);
+
+            shipmentDetails.setOrderNumber(orders.getOrderNumber());
             shipmentDetails.setLineItems(lineItems);
-            //shipmentDetails.setOrderNumber();
 
             shipmentDetailsList.add(shipmentDetails);
         });

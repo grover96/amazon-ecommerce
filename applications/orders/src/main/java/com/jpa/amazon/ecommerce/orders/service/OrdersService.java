@@ -57,7 +57,6 @@ public class OrdersService {
         });
 
         orderDetails.setShipment(shipments);
-
         orderDetails.setLineItems(orders.getLineItems());
 
         return orderDetails;

@@ -26,8 +26,8 @@ public class OrderLineItemsService {
         return orderLineItemsRepository.getByIdAndOrderId(id, orderId);
     }
 
-    public List<OrderLineItems> getByShipmentId(Long shipmentId) {
-        return orderLineItemsRepository.getByShipment(shipmentId);
+    public List<OrderLineItems> findByOrderIdAndShipment(Long orderId, Long shipment) {
+        return orderLineItemsRepository.findByOrderIdAndShipment(orderId, shipment);
     }
 
     public OrderLineItems create(OrderLineItems orderLineItems, Long id) {

@@ -18,7 +18,7 @@ public class OrderLineItemsController {
         this.orderLineItemsService = orderLineItemsService;
     }
 
-    @GetMapping(value = "/lines")
+    @GetMapping
     public Iterable<OrderLineItems> getAllByOrderId(@PathVariable("id") Long id) {
         return orderLineItemsService.getAllByOrderId(id);
     }
@@ -28,9 +28,9 @@ public class OrderLineItemsController {
         return orderLineItemsService.getById(id, orderId);
     }
 
-    @GetMapping
-    public List<OrderLineItems> findByShipmentId(@RequestParam("shipmentId") Long shipmentId){
-        return orderLineItemsService.getByShipmentId(shipmentId);
+    @GetMapping(value = "/shipments")
+    public List<OrderLineItems> findByShipmentId(@PathVariable("id") Long orderId, @RequestParam("shipmentId") Long shipment){
+        return orderLineItemsService.findByOrderIdAndShipment(orderId, shipment);
     }
 
     @PostMapping

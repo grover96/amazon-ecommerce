@@ -18,6 +18,8 @@ public class Shipment {
     private long id;
     @Column(name = "account_id")
     private long account;
+    @Column(name = "order_id")
+    private long order;
     @JsonIgnore
     @Column(name = "address_id")
     private long shippingAddress;
